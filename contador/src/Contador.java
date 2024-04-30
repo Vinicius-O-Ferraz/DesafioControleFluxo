@@ -9,8 +9,13 @@ public class Contador {
         System.out.println("Digite o segundo número: ");
         int numeroDois = scanner.nextInt();
 
-        for (int i = 0; i <= numeroDois - numeroUm ; i++) {
+        if (numeroUm > numeroDois){
+            System.out.println("Os paramtros fornecidos estão incorretos");;
+        }
+        else{
+            for (int i = 0; i <= numeroDois - numeroUm ; i++) {
             System.out.println(i);
         }
+    }
     }
 }
